@@ -9,7 +9,7 @@ header
     background-color:rgb(245, 149, 60);
     border-bottom: solid black 5px;
     
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 }
 #logo
 {
@@ -51,33 +51,39 @@ nav
 
     float: left;
 }
-li
+a
 {
     float: left;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 15px 16px 15px;
     text-decoration: none;
 
     font-size: 17px;
 }
-/* BODY */
-#gameWrapper
+nav a.active
 {
+    background-color: brown;
+}
+/* BODY */
+#myCanvas
+{
+    display: block;
     margin: 0px auto;
 
     width: 80%;
-    height: 80%;
+    height: 520px;
 
     border: darkgrey 5px ridge;
     border-radius: 10px;
 
-    background: silver;
+    /* background: silver; */
 }
-#gameWrapper > h4
+main > h4
 {
+    position: absolute;
     margin: 20px;
-    float: right;
     
     font-family: sans-serif;
+
 }
