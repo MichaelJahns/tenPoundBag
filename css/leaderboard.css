@@ -1,0 +1,70 @@
+*, table, tbody, thead, tr, th, td, a, li, h1, h2, h3, h4, h5, h6, img, header, main{
+    /* border: 1px solid black; */
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#tableContainer {
+    margin-left: 200px;
+    display: inline-block;
+    border: 5px solid rgb(255, 182, 182);
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(255, 182, 182);
+    padding: 25px;
+    margin-bottom: 100px;
+}
+
+table {
+    font-family: 'Hind Siliguri', sans-serif;
+    width: 500px;
+    color: rgb(48, 48, 48);
+}
+
+th {
+    font-size: 2em;
+    border-bottom: 2px solid rgb(48, 48, 48);
+}
+
+td {
+    font-size: 1.5em;
+    padding: 3px;
+}
+
+th:nth-child(2){
+    text-align: left;
+}
+
+/* first column: place */
+td:first-child {
+    width:50px;
+    text-align:center;
+}
+
+tr:last-child td:first-child{
+    border-radius: 0px 0px 0px 5px;
+}
+
+tr:last-child td:last-child{
+    border-radius: 0px 0px 5px 0px;
+}
+
+/* space below first row */
+tbody tr:nth-of-type(1) td {
+    padding-top: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(255, 226, 214);
+}
+
+tr td:nth-child(2){
+    padding-left: 15px;
+    border-left: 2px solid rgb(48, 48, 48);
+}
+
+td:last-child{
+    text-align: center;
+}
